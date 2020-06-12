@@ -32,10 +32,10 @@ app.post("/",function (req,res) {
   };
 
   const jsonData = JSON.stringify(data);
-  const url = "https://us10.api.mailchimp.com/3.0/lists/d24e22ce5d";
+  const url = "https://us10.api.mailchimp.com/3.0/lists/xxxxx";
   const options = {
     method: "POST",
-    auth: "janedoe:87d5496e108b428593c104e8da3c3193-us10"
+    auth: "xxxxx"
   };
 
   const request = https.request(url,options, function (response) {
@@ -65,6 +65,3 @@ app.listen(process.env.PORT || 3000, function () {
   console.log("Listening on port 3000");
 });
 
-// 87d5496e108b428593c104e8da3c3193-us10
-
-// d24e22ce5d
